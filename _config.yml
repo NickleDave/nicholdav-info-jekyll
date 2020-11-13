@@ -1,0 +1,39 @@
+# Site settings
+title: David A. Nicholson
+email: nicholdav@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  artificial intelligence and computational cognitive neuroscience
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://nicholdav.info/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: nicholdav
+github_username:  NickleDave
+
+# Build settings
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "air"
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+
+# Site Author
+author:
+  name             : "David Aaron Nicholson"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "researcher in artificial intelligence and computational cognitive neuroscience"
+  location         : "People's Republic of Takoma Park"
+  email            : "nicholdav arroba gmail punto com"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=rs2xJh4AAAAJ&view_op=list_works&sortby=pubdate"
+  orcid            : "https://orcid.org/0000-0002-4261-4719"
+
+# Exclude from processing.
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
