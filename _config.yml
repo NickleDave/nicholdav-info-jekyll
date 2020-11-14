@@ -1,12 +1,30 @@
 # Site settings
-title: David A. Nicholson
-email: nicholdav@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+locale                    : "en-US"
+title                     : nicholdav.info
+email                     : nicholdav@gmail.com
+description               : >-
   artificial intelligence and computational cognitive neuroscience
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://nicholdav.info/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: nicholdav
-github_username:  NickleDave
+baseurl                   : ""
+url                       : "https://nicholdav.info/"
+twitter_username          : "nicholdav"
+github_username           : "NickleDave"
+
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
+
+# Social Sharing
+twitter:
+  username               : "nicholdav"
+
+# Analytics
+analytics:
+  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          :
+
 
 # Build settings
 theme: minimal-mistakes-jekyll
@@ -21,11 +39,16 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "researcher in artificial intelligence and computational cognitive neuroscience"
   location         : "People's Republic of Takoma Park"
-  email            : "nicholdav arroba gmail punto com"
+  email            : "nicholdav@gmail.com"
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=rs2xJh4AAAAJ&view_op=list_works&sortby=pubdate"
   orcid            : "https://orcid.org/0000-0002-4261-4719"
 
 # Exclude from processing.
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - files
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -37,3 +60,77 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - config
+  - gulpfile.js
+  - log
+  - node_modules
+  - package.json
+  - tmp
+  - vendor
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
