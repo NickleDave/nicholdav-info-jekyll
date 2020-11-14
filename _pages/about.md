@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "David Aaron Nicholson"
+title: "About me"
 excerpt: "About me"
 author_profile: true
 redirect_from:
@@ -8,29 +8,51 @@ redirect_from:
   - /about.html
 ---
 
-Hey, I'm David Nicholson.
-Currently I am a machine intelligence engineer with Embedded Intelligence,
+## the quick version
+I am currently a machine intelligence engineer with
+[Embedded Intelligence](https://www.linkedin.com/company/embedintel/),
 a start-up in the DC area, where I work on adversarial machine learning
+([GARD](https://www.darpa.mil/program/guaranteeing-ai-robustness-against-deception),
+[RED](https://beta.sam.gov/opp/258cc833c18749de87aba9c129ee2205/view))
 and signal restoration.
-Before moving to industry, I worked in academia
-in the areas of cognition, neuroscience, and artificial intelligence.
+Generally speaking, I do research in the areas of
+artificial intelligence, cognition, and neuroscience.
+
+## cognitive computational studies of visual search
 During my post-doctoral fellowship at Emory University in Atlanta, Georgia,
 I worked with [Astrid Prinz](http://www.biology.emory.edu/research/Prinz/index.html)
 in the [Biology department](http://www.biology.emory.edu/),
-on brain-inspired machine learning algorithms for continual learning,
+on brain-inspired algorithms for continual machine learning,
 as part of a [DARPA program](https://www.darpa.mil/news-events/2017-03-16).
+My goal for this project was to understand visual search:
+how does our brain solve the problem of finding an object we're looking for?
+For more on this research, please see this section of my GitHub profile page:  
+<https://github.com/NickleDave#visual-search-and-visual-attention>.
 
-I also work in applied machine learning, most recently in collaboration with Yarden Cohen ([twitter](https://twitter.com/YardenJCohen),
-[github](https://github.com/yardencsGitHub/tweetynet)).
-We are applying neural networks to segment and annotate the song of songbirds, which
-in neuroscience serve as a model system to understand
-how the brain learns and produces speech and similar motor skills, like
-playing guitar or swinging a bat to hit a baseball.
-In addition I maintain a software library,
-[hybrid-vocal-classifier]((http://hybrid-vocal-classifier.readthedocs.io/en/latest/)),
- that automates annotation of birdsong for behavioral experiments.
-These projects began during my graduate studies in [Sam Sober's lab](http://www.biology.emory.edu/research/Sober/Home.html).
-My dissertation work in the Sober lab showed that connections which
+## machine learning and data science tools for studying vocalizations
+My work in applied machine learning focuses mainly on automated annotation of
+birdsong and other vocalizations.
+Most recently, I collaborated with [Yarden Cohen](https://yardencsgithub.github.io/)
+and [Tim Gardner](http://www.bu.edu/biology/people/profiles/tim-gardner/)
+to develop a neural network that learns
+how to annotate birdsong from spectrograms:  
+<https://github.com/yardencsGitHub/tweetynet>.  
+For other related libraries and tools I develop and maintain, please see
+this section of my GitHub profile page:  
+<https://github.com/NickleDave#data-science-tools-for-birdsong-and-other-vocalizations>
+
+## neuroscience of motor learning
+I began developing tools for studying vocalizations during my graduate studies in
+[Sam Sober's lab](http://www.biology.emory.edu/research/Sober/Home.html) at Emory.
+The Sober lab studies motor learning, broadly defined, including vocal learning in songbirds.
+Songbirds provide neuroscience an excellent model system to understand
+how the brain learns and produces speech and similar motor skills,
+like playing guitar or swinging a bat to hit a baseball.
+My [dissertation work](https://open.library.emory.edu/publications/emory%3Atrghv/)
+in the Sober lab showed that connections which
 are known to be important for learning motor skills in humans and other
 mammals are also found in regions of the songbird brain
-that are required to learn song.
+that are important for learning song.
+For the [published paper](https://onlinelibrary.wiley.com/doi/abs/10.1002/cne.24428)
+and related works, please see my
+[Google Scholar profile](https://scholar.google.com/citations?user=rs2xJh4AAAAJ&hl=en).
