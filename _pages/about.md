@@ -18,12 +18,14 @@ and signal restoration.
 Generally speaking, I do research in the areas of
 artificial intelligence, cognition, and neuroscience.
 
-## cognitive computational studies of visual search
+## computational modeling of visual search behavior
 During my post-doctoral fellowship at Emory University in Atlanta, Georgia,
 I worked with [Astrid Prinz](http://www.biology.emory.edu/research/Prinz/index.html)
 in the [Biology department](http://www.biology.emory.edu/),
 on brain-inspired algorithms for continual machine learning,
 as part of a [DARPA program](https://www.darpa.mil/news-events/2017-03-16).
+The Prinz lab provided neuroscience expertise for members of our team
+working on algorithms for goal-driven perception.
 My goal for this project was to understand visual search:
 how does our brain solve the problem of finding an object we're looking for?
 For more on this research, please see this section of my GitHub profile page:  
@@ -42,7 +44,7 @@ this section of my GitHub profile page:
 <https://github.com/NickleDave#data-science-tools-for-birdsong-and-other-vocalizations>
 
 ## neuroscience of motor learning
-I began developing tools for studying vocalizations during my graduate studies in
+I began developing software tools for studying vocalizations during my graduate studies in
 [Sam Sober's lab](http://www.biology.emory.edu/research/Sober/Home.html) at Emory.
 The Sober lab studies motor learning, broadly defined, including vocal learning in songbirds.
 Songbirds provide neuroscience an excellent model system to understand
