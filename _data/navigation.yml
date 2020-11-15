@@ -4,3 +4,6 @@ main:
 
   - title: "C.V."
     url: /assets/pdf/DavidAaronNicholson_CV.pdf
+
+  - title: "Datasets"
+    url: /datasets/
