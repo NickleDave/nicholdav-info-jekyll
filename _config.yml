@@ -36,7 +36,7 @@ plugins:
 # Site Author
 author:
   name             : "David Aaron Nicholson"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/headshot.jpg"
   bio              : "researcher in artificial intelligence and computational cognitive neuroscience"
   location         : "People's Republic of Takoma Park"
   email            : "nicholdav@gmail.com"
