@@ -25,7 +25,7 @@ the `ruby` programming language.
 You can think of it as analogous to `pelican` in Python
 (or Ruby developers might tell me that `pelican` is analgous to `jekyll`).
 One advantage of using `jekyll` is that
-GitHub treats it like a first-class citizen],
+GitHub treats it like a first-class citizen,
 letting developers easily create web pages for themselves or documentation
 for their projects, through the
 [GitHub Pages service](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/about-github-pages-and-jekyll).
@@ -37,8 +37,7 @@ without needing to know how to use `jekyll`
 or how to use any developer tools like `git`.
 
 But I knew there were things I wanted to modify, such as the theme / template.
-The downside of the `academicpages` approach is that
-there's little documentation in its guide about
+There's little documentation in the `academicpages` guide about
 *what* changes were made to the `minimal-mistakes` theme, and why.
 How did Stuart evolve the template from your standard `jekyll`
 minimal blog page to a very specific set-up for academics
@@ -87,7 +86,7 @@ Here's the summary version first so you know what you're getting into:
 ### making the "landing page" be your "about" page
 * use the `redirect` plugin so that the site lands on "about"
 * add an `about.md` --
-  make sure you copy the [YAML front matter]()
+  make sure you copy the [YAML front matter](https://jekyllrb.com/docs/front-matter/)
   from `academicpages`
 * make sure `_config.yml` specifies defaults for `pages` so that your  
   theme gets applied to this `about.md` file
