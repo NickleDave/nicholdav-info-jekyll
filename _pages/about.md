@@ -12,8 +12,7 @@ I am currently a machine intelligence engineer with
 [Embedded Intelligence](https://www.linkedin.com/company/embedintel/),
 a start-up in the DC area, where I work on adversarial machine learning
 ([GARD](https://www.darpa.mil/program/guaranteeing-ai-robustness-against-deception),
-[RED](https://beta.sam.gov/opp/258cc833c18749de87aba9c129ee2205/view))
-and signal restoration.
+[RED](https://beta.sam.gov/opp/258cc833c18749de87aba9c129ee2205/view)).
 
 Generally speaking, I do research in the areas of
 artificial intelligence, cognition, and neuroscience.
@@ -42,8 +41,8 @@ For the [published paper](https://onlinelibrary.wiley.com/doi/abs/10.1002/cne.24
 and related works, please see my
 [Google Scholar profile](https://scholar.google.com/citations?user=rs2xJh4AAAAJ&hl=en).
 
-I am also passionate about open science,
-[broadly defined](https://whitakerlab.github.io/blog/Open-Science-Blog-Post/),
+I am also passionate about open scholarship,
+[broadly defined](https://thepsychologist.bps.org.uk/volume-33/november-2020/bropenscience-broken-science),
 am a trained [Carpentries instructor](https://carpentries.org/become-instructor/),
 and remain involved with the
 [graduate data science group](https://data-science-for-scientists-atl.github.io/)
