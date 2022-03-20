@@ -15,4 +15,4 @@ Code for paper is in <https://github.com/NickleDave/ML-comparison-birdsong>
 - [results_dict.json]({{url}}/assets/data/results_dict.json)  
 - [same_ftrs_results_dict.json]({{url}}/assets/data/same_ftrs_results_dict.json)  
 - [knn_ftrs_results_dict.json]({{url}}/assets/data/knn_ftrs_results_dict.json)  
-- [Google Drive link](https://drive.google.com/open?id=0B0BKW2mh0ySnbzlhU29Mc3djbEU)  
+- [Google Drive link](https://drive.google.com/drive/folders/0B0BKW2mh0ySnbzlhU29Mc3djbEU?resourcekey=0-Sw0kjcvST4eNlyDmRq1_pQ&usp=sharing)  
