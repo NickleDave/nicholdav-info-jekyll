@@ -10,13 +10,14 @@ redirect_from:
 
 I am currently a machine intelligence engineer with
 [Embedded Intelligence](https://www.linkedin.com/company/embedintel/),
-a start-up in the DC area, where I work on adversarial machine learning
+a research and development group in the DC area,
+where we advance understanding of robust machine learning algorithms
 ([GARD](https://www.darpa.mil/program/guaranteeing-ai-robustness-against-deception),
 [RED](https://beta.sam.gov/opp/258cc833c18749de87aba9c129ee2205/view)).
 
-Generally speaking, I do research in the areas of
-artificial intelligence, cognition, and neuroscience.
-During my post-doctoral fellowship at Emory University in Atlanta, Georgia,
+Generally speaking, I work in the areas of
+machine learning, artificial intelligence, cognition, and neuroscience.
+As a post-doctoral researcher at Emory University in Atlanta, Georgia,
 I worked with [Astrid Prinz](http://www.biology.emory.edu/research/Prinz/index.html)
 in the [Biology department](http://www.biology.emory.edu/),
 on brain-inspired algorithms for continual machine learning,
