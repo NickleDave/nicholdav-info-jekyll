@@ -48,16 +48,16 @@ With `academicpages` you just want to follow a couple steps to add your own
 content to some existing template, to easily get a site.
 
 Some background:
-`academicpages` is a fork of `minimal-mistakes`,
-a theme for the `jekyll` library,
-which is a static site generator written in
+`academicpages` is a fork of [`minimal-mistakes`](https://mmistakes.github.io/minimal-mistakes/),
+a very popular theme for the `jekyll` library.
+`jekyyl` is a static site generator written in
 the `ruby` programming language.
 You can think of it as analogous to `pelican` in Python
 (or Ruby developers might tell me that `pelican` is analgous to `jekyll`).
 One advantage of using `jekyll` is that
-GitHub treats it like a first-class citizen,
+GitHub really likes `jekyll`,
 letting developers easily create web pages for themselves or documentation
-for their projects, through the
+for their projects through the
 [GitHub Pages service](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/about-github-pages-and-jekyll).
 And it's free, another plus for academics.
 Stuart modified the `minimal-mistakes` theme in such a way
@@ -66,12 +66,14 @@ on GitHub and use the web interface to add their own content,
 without needing to know how to use `jekyll`
 or how to use any developer tools like `git`.
 
-But I knew there were things I wanted to modify, such as the theme / template.
+So I knew I wanted a site like `academicpages`,
+but I also knew there were things I wanted to modify, such as the theme / template.
 There's little documentation in the `academicpages` guide about
 *what* changes were made to the `minimal-mistakes` theme, and why.
 How did Stuart evolve the template from your standard `jekyll`
-minimal blog page to a very specific set-up for academics
-that lands on the `about` page, showing a profile in the sidebar
+minimal blog page to a very specific set-up for academics?
+Unique features of `academicpages` include
+that it lands on the `about` page and shows a profile in the sidebar
 with links to academia specific sites, and
 includes tabs like "publications", "talks", etc.?
 I tried looking at the `git` commit history but couldn't
@@ -87,6 +89,11 @@ Here's the summary version first so you know what you're getting into:
 4. add links to publications, talks, etc., in the nav bar at the top of the page
 
 ### Setting up a development environment
+This is a thing that might be new to academics
+not familiar with software engineering,
+but the `jekyll` and `ruby` devs have worked really hard
+to make it easy.
+
 * set up a basic environment for working with `jekyll`
   - their quickstart is here: <https://jekyllrb.com/docs/>
   - I'm on PopOS, a Linux distribution similar to Ubuntu, and I use oh-my-zsh,
@@ -98,6 +105,8 @@ Here's the summary version first so you know what you're getting into:
   + <https://jekyllrb.com/tutorials/using-jekyll-with-bundler>
 
 ### Making the "landing page" be your "about" page
+This is the first thing that's specific to our site design.
+
 * use the `redirect` plugin so that the site lands on "about"
 * add an `about.md` --
   make sure you copy the [YAML front matter](https://jekyllrb.com/docs/front-matter/)
@@ -107,6 +116,8 @@ Here's the summary version first so you know what you're getting into:
   + I copied the `#defaults` section from the `academicpages` `_config.yml`
 
 ### Making the sidebar show your profile, with links
+Now we're cooking with `academicpages` gas! Or something
+
 + to make the author profile in the sidebar render all the links that are
   in `academicpages` but not in `minimal-mistakes`, i.e. academia specific
   things like a Google Scholar page, ORCID profile, etc., you'll need to add
@@ -119,34 +130,36 @@ Here's the summary version first so you know what you're getting into:
   as you specify the correct relative path in your `_config.yml`
 
 ### Adding links to publications, talks, etc., in the masthead nav bar
-* Unique to `academicpages` are the links in the navigation bar
-  at the top of the page to pages with lists of publications, talks,
-  and so on.
-  Basically, if you want the same thing, there's three things you'll need to do:
-  1. you'll need to copy the 'navigation.yml' file from `academicpages`,
-  placing it in a `data/` subfolder in your project root,
-  and modify it as you see fit.
-  2. add two related sections in your `_config.yml`:
-    + a 'collections' section,
-      like [this one](https://github.com/academicpages/academicpages.github.io/blob/25c30de2b4ce3e3f23559384699bb4b9865d6473/_config.yml#L176)
-      in the `academicpages` `_config.yml`.
-    + and corresponding keys in your `defaults` section
-      as shown [here](https://github.com/academicpages/academicpages.github.io/blob/25c30de2b4ce3e3f23559384699bb4b9865d6473/_config.yml#L212)
-      in the `academicpages` `_config.yml`.
-  This *is* explained very briefly in the `about.md` of `academicpages` but
-  here's a quick explainer of how it all works.
-  `minimal-mistakes` lets you add links to the masthead
-  by supplying a file called `navigation.yml`.
-  This is a
-  [standard approach in `jekyll`](https://jekyllrb.com/tutorials/navigation/).
-  There are other uses for [data files](https://jekyllrb.com/docs/datafiles/).
-  What's specific to `minimal-mistakes` is that you
-  add these links to the nav bar by specifying a `main` key
-  in `navigation.yml`, as described here:
-  <https://mmistakes.github.io/minimal-mistakes/docs/navigation/>.
-  In the case of `academicpages`,
-  the links have the names of the specific sections
-    in the `navigation.yml` with the keys "publications", "talks", etc.
+Unique to `academicpages` are the links in the navigation bar
+at the top of the page to pages with lists of publications, talks,
+and so on.
+
+If you want the same thing, there's two things you'll need to do:
+1. you'll need to copy the 'navigation.yml' file from `academicpages`,
+placing it in a `data/` subfolder in your project root,
+and modify it as you see fit.
+2. add two related sections in your `_config.yml`:
+  + a 'collections' section,
+    like [this one](https://github.com/academicpages/academicpages.github.io/blob/25c30de2b4ce3e3f23559384699bb4b9865d6473/_config.yml#L176)
+    in the `academicpages` `_config.yml`.
+  + and corresponding keys in your `defaults` section
+    as shown [here](https://github.com/academicpages/academicpages.github.io/blob/25c30de2b4ce3e3f23559384699bb4b9865d6473/_config.yml#L212)
+    in the `academicpages` `_config.yml`.
+
+This *is* explained very briefly in the `about.md` of `academicpages` but
+here's a quick explainer of how it all works.
+`minimal-mistakes` lets you add links to the masthead
+by supplying a file called `navigation.yml`.
+This is a
+[standard approach in `jekyll`](https://jekyllrb.com/tutorials/navigation/).
+There are other uses for [data files](https://jekyllrb.com/docs/datafiles/).
+What's specific to `minimal-mistakes` is that you
+add these links to the nav bar by specifying a `main` key
+in `navigation.yml`, as described here:
+<https://mmistakes.github.io/minimal-mistakes/docs/navigation/>.
+In the case of `academicpages`,
+the links have the names of the specific sections
+in the `navigation.yml` with the keys "publications", "talks", etc.
 
 ## Coda: publishing, etc.
 
