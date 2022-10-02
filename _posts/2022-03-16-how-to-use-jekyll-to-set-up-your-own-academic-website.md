@@ -1,6 +1,35 @@
 ---
-title:  "How to use `jekyll` to set up your own academic website"
+title:  "Make your own `academicpages` from scratch with `jekyll`"
 ---
+
+In this post I document the process I went through
+to set up a peronsal web site with a structure
+similar to the [`academicpages`](https://academicpages.github.io/) theme
+used by many academics.
+I'm writing the post for my future self,
+and for you if you want to do the same.
+
+## Why would you bother?
+
+I wanted a site similar in style to [`academicpages`](https://academicpages.github.io/),
+with links in the sidebar to Google Scholar, OrcID, etc.,
+and the ability to use `jekyll`'s "collections" feature
+to easily organize publications, talks and teaching.
+But I also wanted the flexibility to change themes,
+which is not easy to do with `academicpages`.
+I love to support Python libraries like `pelican`,
+and some of the themes are very versatile,
+like their version of
+[`bootstrap`](https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3).
+But somehow `minimal-mistakes` and other `jekyll` themes just look better
+to my (untrained) eye.
+
+Last but not least, this is a fun exercise
+in using libraries in a language besides Python.
+It's interesting to experience the tooling in the ecosystems
+of other programming languages.
+
+## How did we get here?
 
 I've had a personal web page for sometime that I set up with
 `pelican`, a static web page generator in Python.
@@ -17,6 +46,7 @@ developed by [Stuart Geiger](https://stuartgeiger.com/).
 and you don't have time to bother learning how to use a static site generator.
 With `academicpages` you just want to follow a couple steps to add your own
 content to some existing template, to easily get a site.
+
 Some background:
 `academicpages` is a fork of `minimal-mistakes`,
 a theme for the `jekyll` library,
@@ -49,41 +79,25 @@ piece it together.
 I figured there couldn't be *too too* many steps
 to setting up a similar site on my own.
 
-So here's the process I went through to get something similar.
-I'm documenting it for my future self, and for you if
-you want to do the same. Why bother?
-A lot of the themes for `jekyll` just look better to me than all the Python themes.
-I love to support Python libraries like `pelican`,
-and some of the themes are very versatile,
-like their version of
-[`bootstrap`](https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3).
-But somehow `minimal-mistakes` and other `jekyll` themes just look better
-to my (untrained) eye.
-I also wanted the flexibility to change themes.
-Last but not least, this is a fun exercise
-in using libraries in a language besides Python.
-It's interesting to experience the tooling in the ecosystems
-of other programming languages.
-
-## step-by-step guide to developing your own 'academicpages'
+## Step-by-step guide to developing your own 'academicpages'
 Here's the summary version first so you know what you're getting into:
 1. set up a `jekyll` development environment
 2. make the landing page be your about page
 3. make the sidebar show your profile with links
 4. add links to publications, talks, etc., in the nav bar at the top of the page
 
-### setting up a development environment
+### Setting up a development environment
 * set up a basic environment for working with `jekyll`
-  - their quickstart is here: https://jekyllrb.com/docs/
+  - their quickstart is here: <https://jekyllrb.com/docs/>
   - I'm on PopOS, a Linux distribution similar to Ubuntu, and I use oh-my-zsh,
-    so I followed these instructions: https://jekyllrb.com/docs/installation/ubuntu/
+    so I followed these instructions: <https://jekyllrb.com/docs/installation/ubuntu/>
     except I changed `.bashrc` to `.zshrc`
 * then I followed the directions for managing dependencies with `bundler`
   so that I could install the `minimal-mistakes` template as a `gem`
   instead of forking their repo and modifying it
-  + https://jekyllrb.com/tutorials/using-jekyll-with-bundler
+  + <https://jekyllrb.com/tutorials/using-jekyll-with-bundler>
 
-### making the "landing page" be your "about" page
+### Making the "landing page" be your "about" page
 * use the `redirect` plugin so that the site lands on "about"
 * add an `about.md` --
   make sure you copy the [YAML front matter](https://jekyllrb.com/docs/front-matter/)
@@ -92,7 +106,7 @@ Here's the summary version first so you know what you're getting into:
   theme gets applied to this `about.md` file
   + I copied the `#defaults` section from the `academicpages` `_config.yml`
 
-### making the sidebar show your profile, with links
+### Making the sidebar show your profile, with links
 + to make the author profile in the sidebar render all the links that are
   in `academicpages` but not in `minimal-mistakes`, i.e. academia specific
   things like a Google Scholar page, ORCID profile, etc., you'll need to add
@@ -104,7 +118,7 @@ Here's the summary version first so you know what you're getting into:
   just has an `images` folder in its root. Doesn't matter too much as long
   as you specify the correct relative path in your `_config.yml`
 
-### adding links to publications, talks, etc., in the masthead nav bar
+### Adding links to publications, talks, etc., in the masthead nav bar
 * Unique to `academicpages` are the links in the navigation bar
   at the top of the page to pages with lists of publications, talks,
   and so on.
@@ -129,7 +143,31 @@ Here's the summary version first so you know what you're getting into:
   What's specific to `minimal-mistakes` is that you
   add these links to the nav bar by specifying a `main` key
   in `navigation.yml`, as described here:
-  https://mmistakes.github.io/minimal-mistakes/docs/navigation/
+  <https://mmistakes.github.io/minimal-mistakes/docs/navigation/>.
   In the case of `academicpages`,
   the links have the names of the specific sections
     in the `navigation.yml` with the keys "publications", "talks", etc.
+
+## Coda: publishing, etc.
+
+After making the changes just described, I had a site
+with a structure similar to `academicpages`.
+
+To actually publish the site, I still use a workflow similar to
+what Jake Vanderplas uses for his blog:
+<https://github.com/jakevdp/jakevdp.github.io-source>
+This centers around a Makefile with commands for `build` and `serve`.
+
+The key thing that makes it easy to publish to Github Pages is to
+use the `ghp-import` package, as suggested by the `pelican` docs:
+<https://docs.getpelican.com/en/latest/tips.html#project-pages>.
+Of course, `jekyll` gets special treatment on GitHub
+so it's kind of overkill,
+but I still like having a separate repo that I just push the
+.html and .css files to without thinking about it.
+
+So this is how I have my site set up now!
+Stay tuned for it to change suddenly,
+because as a developer I love to spend hours
+farting around with tools that let me avoid real work.
+I'll keep this post up for posterity anyway.
