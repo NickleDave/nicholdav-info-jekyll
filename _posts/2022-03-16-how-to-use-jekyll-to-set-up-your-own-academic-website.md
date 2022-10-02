@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "How to use `jekyll` to set up your own academic website"
 ---
 
@@ -8,7 +7,7 @@ I've had a personal web page for sometime that I set up with
 Basically I adopted my approach from the one Jake Vanderplas took for his
 ["pythonic perambulations" blog](https://github.com/jakevdp/jakevdp.github.io-source/).
 However I wasn't happy with how my page looked
-(which has nothing to do with Jake Vanderplas,  
+(which has nothing to do with Jake Vanderplas,
 and everything to do with my moribund graphic design and css/html skillz).
 And it was time to update my site anyway.
 Recently I noticed a collaborator had set up their own personal site using the
@@ -89,7 +88,7 @@ Here's the summary version first so you know what you're getting into:
 * add an `about.md` --
   make sure you copy the [YAML front matter](https://jekyllrb.com/docs/front-matter/)
   from `academicpages`
-* make sure `_config.yml` specifies defaults for `pages` so that your  
+* make sure `_config.yml` specifies defaults for `pages` so that your
   theme gets applied to this `about.md` file
   + I copied the `#defaults` section from the `academicpages` `_config.yml`
 
@@ -129,7 +128,7 @@ Here's the summary version first so you know what you're getting into:
   There are other uses for [data files](https://jekyllrb.com/docs/datafiles/).
   What's specific to `minimal-mistakes` is that you
   add these links to the nav bar by specifying a `main` key
-  in `navigation.yml`, as described here:  
+  in `navigation.yml`, as described here:
   https://mmistakes.github.io/minimal-mistakes/docs/navigation/
   In the case of `academicpages`,
   the links have the names of the specific sections
